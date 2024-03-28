@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a.active {
+    font-weight: bold;
+}
+
+.header {
+    background-color: #e71313;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h3{
+    color: #fff;
+}
+.header a {
+    text-decoration: none;
+    color: #f0ebeb;
+    margin: 0 5px;
+}
+.header a {
+    text-decoration: none;
+    color: #f0ebeb;
+    margin: 0 5px;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card {
+    border: 1px solid #d2cccc;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 2px 2px 5px rgb(212, 19, 19);
+    text-align: center; /* Center align text */
+}
+.card h2 {
+    margin-top: 0;
+    color: #e71313;
+    font-size: 24px; /* Increase icon size */
+}
+.card p {
+    margin-bottom: 0;
+    color: #e71313;
+    font-size: 18px; /* Adjust font size */
+}
+h1 {
+    text-align: center;
+    color: #e71313; /* Set color to #e71313 */
+}
+
+.avatar-dropdown {
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ef7676;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff; /* Set background color to white */
+    min-width: 120px;
+    min-height: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a.logout {
+    color: #000;
+    margin: 5px 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+main .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 30%;
+}
+
+main .card h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+main .card p {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="adminn.css">
+
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="header">
+        <h3><i class="fas fa-hospital"></i>Medicare</h3>
+        <a href="http://127.0.0.1:5500/HTML.html/adminn.html"><i class="fas fa-home"></i> Home</a> 
+        <a href="#"><i class="fas fa-user-md"></i> View Doctors</a> 
+        <a href="#" class="active"><i class="fas fa-users"></i> View Patients</a> 
+        <div class="avatar-dropdown">
+            <div class="avatar" onclick="toggleDropdown()">
+                <span id="adminInitials">AD</span>
+            </div>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" class="logout">Logout</a>
+            </div>            
+            
+        </div>
+    </div>
+    <h1>Admin Dashboard</h1> 
+    <div class="content">
+        <div class="card">
+            <h2><i class="fas fa-user-md"></i></h2>
+            <p>Doctors Registered</p> 
+            <p>25</p> 
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-stethoscope"></i></h2> 
+            <p>Specialties</p>
+            <p>10</p> 
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-calendar-check"></i></h2> 
+            <p>Appointments Booked Today</p> 
+            <p>50</p> 
+        </div>
+    </div>
+    <script src="adminn.js"></script>
+</body>
+</html>
