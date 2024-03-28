@@ -1,0 +1,39 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.specialization-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.specialization-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(71, 179, 238);
+  cursor: pointer;
+}
+
+#doctor-list {
+  margin-top: 20px;
+}
+
+.book-appointment-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-appointment-button:hover {
+  background-color: darkred;
+}

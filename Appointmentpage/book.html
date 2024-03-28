@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesbook.css">
+  <title>Doctor Appointment Booking</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor Appointment Booking</h1>
+    <div class="specialization-buttons">
+      <button onclick="showDoctors('cardiologist')">Cardiologist</button>
+      <button onclick="showDoctors('dermatologist')">Dermatologist</button>
+      <button onclick="showDoctors('neurologist')">Neurologist</button>
+      <button onclick="showDoctors('pediatrician')">Pediatrician</button>
+      <button onclick="showDoctors('psychiatrist')">Psychiatrist</button>
+      <button onclick="showDoctors('orthopedic')">Orthopedic</button>
+    </div>
+    <div id="doctor-list"></div>
+    <div id="doctor-info"></div>
+    <!-- Added inline style to adjust the position of the label -->
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+      <label for="appointmentDate">Appointment Date:</label>
+      <input type="date" id="appointmentDate">
+    </div>
+    <!-- Modified line to add the class to the "Book Appointment" button -->
+    <button class="book-appointment-button" onclick="bookAppointment()">Book Appointment</button>
+  </div>
+  <script src="scriptbook.js"></script>
+</body>
+</html>
