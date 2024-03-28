@@ -22,7 +22,9 @@ h1 {
 }
 
 #doctor-list {
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 11em;
 }
 
 .book-appointment-button {
@@ -37,3 +39,4 @@ h1 {
 .book-appointment-button:hover {
   background-color: darkred;
 }
+
