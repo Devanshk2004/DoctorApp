@@ -40,3 +40,26 @@ h1 {
   background-color: darkred;
 }
 
+.doctor-grid {
+  position: relative;
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+  transition: transform 0.4s;
+  margin-bottom: 15px;
+}
+
+.doctor-grid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-grid.selected {
+  border: 1px solid blue;
+}
+
+
+
